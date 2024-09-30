@@ -1,0 +1,64 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.7.4
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: true
+    checksum: true
+    download: true
+    fetch: true
+    git: false
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: false
+    system: true
+    tags: true
+    version: false
+app_desc: Bun is a fast JavaScript runtime/package manager/bundler
+app_name: bun
+app_repo: https://github.com/oven-sh/bun
+app_type: standalone
+app_website: https://bun.sh/
+archive_conf_path: bun-{os}-{arch}
+archive_conf_strip: 0
+archive_enabled: true
+archive_regex: (\\.zip)$
+checksum_conf_algorithm: 256
+checksum_enabled: true
+checksum_url: https://github.com/oven-sh/bun/releases/download/bun-v{version}/SHASUMS256.txt
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: ''
+download_url: https://github.com/oven-sh/bun/releases/download/bun-v{version}/bun-{os}-{arch}.zip
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: move
+install_map_yaml:
+    bun: bin/bun
+package_enabled: false
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-bun
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-bun.git
+source_enabled: false
+sys_arch_enabled: true
+sys_arch_yaml:
+    aarch64*: aarch64
+    arm64*: aarch64
+    armv5*: aarch64
+    armv6*: aarch64
+    armv7*: aarch64
+    i386: x64
+    i686: x64
+    powerpc64le: x64
+    ppc64le: x64
+    x86: x64
+    x86_64: x64
+sys_ext_enabled: false
+sys_os_enabled: false
+test_cmd_args: --version
+version_file_enabled: false
+version_prefix: bun-v
